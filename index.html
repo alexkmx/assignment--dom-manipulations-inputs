@@ -14,12 +14,13 @@
          <p><button>Push Me</button></p>
          <div class="answer-box">
             <input type="text">
+
             <p class="flash-display"><!--Validation message here--></p>
          </div>
        </div>
      </div>
 
-     <hr class="q-divider">
+<hr class="q-divider">
 
   <div class="exercise-container" id="validate-field"><!-- Teacher stuff magically appears! -->
     <div class="content-box student-workspace">
@@ -27,13 +28,16 @@
       <p><em>Code your answer in <code>main.js</code></em></p>
       <p><button>Push Me</button></p>
       <div class="answer-box">
-         <input type="text">
-         <p class="flash-message"><!--Validation message here--></p>
+       <input name="text">
+       <div class="error"></div>
+       <p class="flash-message"><!--Validation message here--></p>
       </div>
     </div>
   </div>
 
   <hr class="q-divider">
+
+<!--////////////////////////////////  3  //////////////////////////////////////////-->
 
   <div class="exercise-container" id="calculate-items"><!-- Teacher stuff magically appears! -->
     <div class="content-box student-workspace">
@@ -55,8 +59,9 @@
       </div>
     </div>
   </div>
-  
+
   <hr class="q-divider">
+<!--////////////////////////////////  4  //////////////////////////////////////////-->
 
   <div class="exercise-container" id="select-to-show-more"><!-- Teacher stuff magically appears! -->
     <div class="content-box student-workspace">
@@ -68,34 +73,34 @@
               <option value="Mini Cooper" data-msrp="20,950" data-mpg="27-33 mpg"  data-edmunds="B" data-img="mini-cooper_145.jpg">2016 Mini Cooper</option>
               <option value="Mazda 3" data-msrp="18,345" data-mpg="29-34 mpg" data-edmunds="A" data-img="mazda-3_1239.jpg">2016 Mazda 3</option>
               <option value="Dodge Charger" data-msrp="27,995" data-mpg="16-23 mpg"  data-edmunds="B" data-img="dodge-charger_3932.jpg"> 2016 Dodge Charger</option>
-
            </select>
             <div class="more-info">
                <div class="img-box">
-                  <!-- img goes here -->
+                 <img class="image" src=" " alt="">
                </div>
                <h5>
                   <strong>Make + Model</strong><br/>
-                  <span class='model'><!--make and model goes here--></span>
+                  <span class='model'>value</span>
                </h5>
-               <p><strong>MSRP: </strong><span class='msrp'><!--msrp value goes here--></span></p>
-               <p><strong>MPG: </strong><span class='mpg'><!--mpg value goes here--></span></p>
-               <p><strong>Edmunds Rating: </strong><span class='edmunds'><!--edmunds rating goes here--></span></p>
+               <p><strong>MSRP: </strong><span class='msrp'>msrp</span></p>
+               <p><strong>MPG: </strong><span class='mpg'>mpg</span></p>
+               <p><strong>Edmunds Rating: </strong><span class='edmunds'>data-edmunds</span></p>
             </div>
-
-
       </div>
     </div>
   </div>
 
   <hr class="q-divider">
+<!--////////////////////////////////  5  //////////////////////////////////////////-->
 
   <div class="exercise-container" id="add-guest"><!-- Teacher stuff magically appears! -->
     <div class="content-box student-workspace">
       <h4>Your Work</h4>
       <p><em>Code your answer in <code>main.js</code>. You may need to add extra html elements inside of the <code>div.answer-box</code>, and give those elements an attribute of <code>class="guest"</code > </em></p>
       <div class="answer-box">
-        <input type="text"/>
+
+        <input class="entradas" type="text"/>
+
         <h3>Guest List</h3>
         <ul class="guest-list"></ul>
       </div>
@@ -103,19 +108,22 @@
   </div>
 
   <hr class="q-divider">
+<!--////////////////////////////////  6  //////////////////////////////////////////-->
 
   <div class="exercise-container" id="add-item-bonus"><!-- Teacher stuff magically appears! -->
     <div class="content-box student-workspace">
       <h4>Your Work</h4>
       <p><em>Code your answer in <code>main.js</code>. <br/><br/> When adding to the list, you will need to create an <code>&lt;li class="item"&gt;</code > element that contains both the text from the input and that also contains a <code>&lt;button class='remove'&gt;</code>.</em></p>
       <div class="answer-box">
-        <input type="text">
+        <form class="" name="formulario">
+        <input type="text" name="texto">
+        </form>
         <h3>Items List</h3>
         <ul class="guest-list"></ul>
       </div>
     </div>
   </div>
-   
+
 
 <script src="./project-setup.js"></script>
 <script src="./main.js"></script>
